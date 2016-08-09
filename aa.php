@@ -1,5 +1,5 @@
 <?php
-exec("netstat -ano|findstr 192.168.1.8:8000",$out);
+exec("netstat -ano|findstr 192.168.1.97:8000",$out);
 $a=explode(' ',$out[0]);
 $arr=array();
 foreach($a as $k=>$v){
