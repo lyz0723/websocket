@@ -2,7 +2,7 @@
 error_reporting(E_ALL ^ E_NOTICE);
 ob_implicit_flush();
 
-$sk=new Sock('192.168.1.97',8000);
+$sk=new Sock('120.25.150.44',8000);
 $sk->run();
 class Sock{
 	public $sockets;
