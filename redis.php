@@ -7,7 +7,7 @@
  * 这点可用于防止缓存穿透
  *
  */
-class Redis
+class Redi
 {
     private $redis;
 

@@ -12,7 +12,11 @@ foreach($a as $k=>$v){
 $pid=$arr[4];
 exec("taskkill /pid $pid -f",$b);
 print_r($b);*/
-include_once 'redis.php';
 
+$port        =    6379;//$config['port'] ? $config['port'] : 6379;
+$host        =    '127.0.0.1';
+$timeout = 30;
 $redis = new Redis();
-print_r($redis);
+$redis->connect($host, $port, $timeout);
+$redis->set('liyanzhao','23');
+echo $redis->get('liyanzhao');
