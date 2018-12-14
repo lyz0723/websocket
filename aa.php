@@ -13,9 +13,6 @@ $pid=$arr[4];
 exec("taskkill /pid $pid -f",$b);
 print_r($b);*/
 include_once 'redis.php';
-$config = array(
-    'port'=> 6379,
-    'host'=> '127.0.0.1',
-);
-$redis = new Redis($config);
+
+$redis = new Redis();
 print_r($redis);
