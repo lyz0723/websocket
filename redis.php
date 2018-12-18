@@ -5,5 +5,5 @@
     $redis = new Redis();
     $redis->connect($host, $port, $timeout);
     $redis->set('liyanzhao','23');
-    echo $redis->get('liyanzhao');
+
 ?>
