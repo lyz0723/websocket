@@ -5,7 +5,7 @@
  * Date: 2018/12/18
  * Time: 9:12
  */
-$ws_server = new swoole_websocket_server('127.0.0.1', 9502);
+$ws_server = new Swoole\WebSocket\Server('127.0.0.1', 9502);
 print_r($ws_server);
 $redis = new Redis();
 $redis->connect('127.0.0.1', 6379);
